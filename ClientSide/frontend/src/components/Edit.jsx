@@ -23,7 +23,7 @@ const Edit = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/api/getdata/${id}`)
+      const response = await fetch(`http://localhost:4001/api/getdata/${id}`)
       if (!response.ok) {
         throw new Error(`Failed to fetch: ${response.status}`)
       }
@@ -66,7 +66,7 @@ const Edit = () => {
     }else{
     
     try {
-      const response = await fetch(`http://localhost:4000/api/update/${id}`, {
+      const response = await fetch(`http://localhost:4001/api/update/${id}`, {
         method: 'PUT',
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify(val),

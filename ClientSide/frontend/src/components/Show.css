@@ -1,0 +1,94 @@
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 2200px;
+    background-color: #e6e4e4;
+    margin-left: -600px;
+    margin-top: -200px;
+  }
+  
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  .content{
+    margin-left: -300px;
+    margin-top: 30px;
+  }
+  .card1-image img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card1-details {
+    text-align: center;
+  }
+  
+  .card1-details h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card1-details p {
+    font-weight: bold;
+    font-size: 1em;
+    color: #555;
+    /* margin: 5px 0; */
+  }
+  
+  /* Styling for action buttons */
+  .card1-actions {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    gap: 5px;
+    width: 350px;
+    height: 60px;
+    margin-top: -100px;
+    margin-left: 300px;
+    margin-right: 10px;
+  }
+  
+  .card1-actions button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 30px;
+    /* margin-bottom: 600px; */
+  }
+  .btn-edit {
+    background-color:rgb(10, 74, 99);
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 100px;
+  }
+  /* .btn-edit:hover {
+    background-color: #0056b3;
+  } */
+  .btn-delete {
+    background-color: #6e0510;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 100px;
+  }
+  
+  /* .btn-delete:hover {
+    background-color: #c82333;
+  } */

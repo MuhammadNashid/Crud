@@ -38,15 +38,15 @@ const Add = () => {
     console.log(val)
   
     try {
-      const response = await fetch('http://localhost:4000/api/add', {
+      const res = await fetch('http://localhost:4001/api/add', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(val)
       });
       
-      const data = await response.json()
+      const data = await res.json()
   
-      if (response.status === 201) {
+      if (res.status === 201) {
         alert(data.msg)
         navigate("/")
       } else {

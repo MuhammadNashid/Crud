@@ -11,7 +11,7 @@ const Index = () => {
   }, []);
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/get");
+      const response = await fetch("http://localhost:4001/api/get");
       const res = await response.json();
       // console.log(res)
       setData([...res]);

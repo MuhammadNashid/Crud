@@ -13,7 +13,7 @@ const Show = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/api/getdata/${id}`)
+      const response = await fetch(`http://localhost:4001/api/getdata/${id}`)
       if (!response.ok) {
         throw new Error(`Failed to fetch: ${response.status}`)
       }
@@ -26,7 +26,7 @@ const Show = () => {
 
   const deleteEmployee = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/api/delete/${id}`, {
+      const response = await fetch(`http://localhost:4001/api/delete/${id}`, {
         method: "DELETE",
       })
       if (!response.ok) {
@@ -46,7 +46,7 @@ const Show = () => {
     <div className="details-container">
       <div className="card1">
         <div className="content">
-        <div className="card-image">
+        <div className="card1-image">
           <img src={employee.pic} alt="Employee" />
         </div>
         <div className="card1-details">
