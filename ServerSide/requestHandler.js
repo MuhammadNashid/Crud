@@ -1,3 +1,4 @@
+
 import dataSchema from './models/data.js'
 
 export async function adduser(req,res) {
